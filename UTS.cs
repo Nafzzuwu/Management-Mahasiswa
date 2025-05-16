@@ -61,9 +61,9 @@ namespace SistemManajemenMahasiswa
             return _Mahasiswas.FirstOrDefault(s => s.Nim == nim);
         }
 
-        public bool UpdateMahasiswa(string id, string name, string jurusan)
+        public bool UpdateMahasiswa(string nim, string name, string jurusan)
         {
-            var Mahasiswa = GetMahasiswaById(id);
+            var Mahasiswa = GetMahasiswaById(nim);
             if (Mahasiswa == null)
             {
                 return false;
